@@ -7,15 +7,20 @@ int phi(int n)
     {
         if(n % i == 0)
         {
+            // i is a prime diveding n.
             while(n % i == 0)
             {
+                // divide all the factors of i
                 n /= i;
             }
+            // same as: ret * (1 - 1/p)
             ret -= (ret / i);
         }
     }
     if(n > 1)
     {
+        // there can be only one prime greater
+        // than sqrt(n) that divides n
         ret -= (ret / n);
     }
     return ret;

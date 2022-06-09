@@ -1,3 +1,4 @@
+#define ll long long int
 ll BigMod(ll base, ll pw, ll Mod){
 	ll ans = 1;
 	while(pw > 0){

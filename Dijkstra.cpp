@@ -51,8 +51,8 @@ void dijkstra(int src)
 
         if(u.cost != dist[u.At])
         {
-			continue;
-		}
+		continue;
+	}
 		//cout << u.cost << " " << dist[u.At] << "\n";
 
         for(Edge e : adj[u.At])
